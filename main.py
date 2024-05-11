@@ -8,7 +8,7 @@ def load_knowledge_base(file_path: str) -> dict:
         with open(file_path, 'r') as file:
             data: dict = json.load(file)
     except (FileNotFoundError, json.JSONDecodeError):
-        data = {}  # Return an empty dictionary if file is missing or invalid JSON
+        data = {}  
     return data
 
 
