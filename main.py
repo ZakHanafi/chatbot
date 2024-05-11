@@ -4,8 +4,11 @@ from difflib import get_close_matches
 
 
 def load_knowledge_base(file_path: str) -> dict:
-    with open(file_path, 'r') as file:
-        data: dict = json.load(file)
+    try:
+        with open(file_path, 'r') as file:
+            data: dict = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        data = {}  # Return an empty dictionary if file is missing or invalid JSON
     return data
 
 
@@ -27,6 +30,7 @@ def get_answer_for_question(question:str, knowledge_base:dict) -> str | None:
         
 def chat_bot():
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
+    print(knowledge_base)
 
 
     while True:
@@ -48,7 +52,7 @@ def chat_bot():
             if new_answer.lower() != 'skip':
                 knowledge_base["questions"].append({"question": user_input, "answer": new_answer})
                 save_knowledge_base('knowledge_base.json' , knowledge_base)
-                print("Bot: Thank you I learned a new response!")
+                print('Bot: Thank you I learned a new response!')
 
 if __name__ == '__main__':
     chat_bot()

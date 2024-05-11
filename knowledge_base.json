@@ -1,0 +1,56 @@
+{
+  "questions": [
+    {
+      "question": "What is Python?",
+      "answer": "Python is a high-level programming language."
+    },
+    {
+      "question": "What is Git?",
+      "answer": "Git is a version control system."
+    },
+    {
+      "question": "Hello",
+      "answer": "Wassup Zebby"
+    },
+    {
+      "question": "yoo",
+      "answer": "wusgood zebby"
+    },
+    {
+      "question": "hello my nigg",
+      "answer": "sup my nigga"
+    },
+    {
+      "question": " how you doing today",
+      "answer": "im doing quite well what about you"
+    },
+    {
+      "question": " Do you think that AI will eventually take over and destroy humanity",
+      "answer": "maybe...."
+    },
+    {
+      "question": "Are you AI",
+      "answer": "Nahh im just json lol"
+    },
+    {
+      "question": "so wassup",
+      "answer": "nothing much"
+    },
+    {
+      "question": "you have work tomorrow",
+      "answer": "I never work!"
+    },
+    {
+      "question": "YOU WORK TMR",
+      "answer": "nahh"
+    },
+    {
+      "question": "soo wyd",
+      "answer": "nothing much"
+    },
+    {
+      "question": "wyd tmr",
+      "answer": "nothing just chilling"
+    }
+  ]
+}
